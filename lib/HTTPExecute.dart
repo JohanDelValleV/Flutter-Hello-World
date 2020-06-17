@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'description.dart';
 
 class HTTPExecute {
-  String endPointUrl = 'https://0cf71038b5ca.ngrok.io/api/v1';
+  String endPointUrl = 'https://fc5bd24c8900.ngrok.io/api/v1';
 
   doLogin(String user, String password, BuildContext context) async {
     Map<String, String> body = {
@@ -16,7 +16,7 @@ class HTTPExecute {
     if (response.statusCode == 200) {
       print(response.statusCode);
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => SecondRoute()));
+          context, MaterialPageRoute(builder: (context) => ThirdRoute()));
     }
   }
 }
